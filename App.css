@@ -1,0 +1,102 @@
+/* ==== GLOBAL STYLE ==== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #1a1124; /* тёмно-фиолетовый фон */
+  color: #f0e6ff; /* светлый сиреневый текст */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* ==== APP CONTAINER ==== */
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  background: #24172f; /* чуть светлее, чем фон */
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.2);
+}
+
+/* ==== TITLE ==== */
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  background: linear-gradient(90deg, #ff4ee7, #b37bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==== DROPDOWN ==== */
+
+select {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  background: #352440;
+  color: #ffdbff;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: 0.2s;
+}
+
+select:hover {
+  background: #3e2b4b;
+}
+
+select:focus {
+  background: #492f59;
+}
+
+/* ==== GRID IMAGES ==== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #2d1e3a;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(255, 0, 255, 0.15);
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ==== LOADING & ERROR ==== */
+
+.message {
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  color: #ffb3ff;
+}
+
+.error {
+  color: #ff6ac1;
+}
